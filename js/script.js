@@ -21,3 +21,23 @@ function handleToggleButtonClick() {
         bodyTag.classList.add('light');
     }
 }
+
+function handleUpdateTextButtonClick() {
+    // get element of user's input text
+    const userInputText = document.getElementById('update-text');
+
+    // get element of the title display text
+    const displayText = document.getElementById('display-text');
+    
+    // update display text with input text
+    displayText.textContent = userInputText.value;
+
+    userInputText.value = "";
+}
+
+function handleAlertButtonClick() {
+    // get element of display text
+    const displayText = document.getElementById('display-text');
+
+    alert(displayText.textContent);
+}
